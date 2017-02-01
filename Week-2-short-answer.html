@@ -125,12 +125,57 @@ $(document).ready(function () {
 <div id="ruotong-wang" class="section level1">
 <h1>Ruotong Wang</h1>
 <!-- leave this material as is -->
-<p>Compiled on Wed Feb 1 11:01:15 2017.</p>
+<p>Compiled on Wed Feb 1 15:15:11 2017.</p>
 <!-- put your content after this line -->
 <p><strong>Problem 1.1</strong> <em>a) Taffy: 3 </em>b) year: 1 <em>c) sex: 1 </em>d) name: 1 *e) count: 2</p>
 <p><strong>Problem 1.2</strong> <em>Rule 1 : True, each row is a case </em>Rule 2 : Not true, the column of variable “number of states” does not contain same kind of value for each cases. The tidy pattern is interrupted by the value “it depends”, which is not a number as the value of other cases.</p>
 <p><strong>Problem 1.4</strong> 1.The vairables in Table A are “Year”, “Algeria”, “Brazil”, “Columbia”; The vairables in Table B are “Country”, “Y2000”, “Y2001”; The variables in Table C are “Country”, “Year”, “Value”. 2.In Table A, each case is a year; In Table B, each case is a country; In Table C, each case is a country in a year.</p>
 <p><strong>Problem 1.5</strong> 1.There are 7 variables 2.Each case is an airport 3.Categorical variables:“lat,lon”, “alt”, “tz”; Quantitative: “faa”, “name” , “dst”, “tzone”.</p>
+<p><strong>Problem2.2</strong> 2. the file name should be wrapped with quatation marks</p>
+<p><strong>Problem2.3</strong></p>
+<pre><code>data(&quot;CPS85&quot;,package = &quot;mosaicData&quot;)
+View(CPS85)</code></pre>
+<p>cencus population survey</p>
+<p><strong>Problem2.4</strong> What’s in the () should be a name of a data Table, not a data set. Also, in this statement, it is not clear whether NHANES is a data table or the name of a data set. Besides, package is a function, not a name for a object. So it should be package= “name of the data set”</p>
+<p><strong>Problem2.6</strong> 2. the name can’t contain any punctuation symbols 3. the name can’t contain any punctuation symbols 5. the name can’t contain any punctuation symbols 9. the name can’t contain any punctuation symbols, it is a functio name.</p>
+<p><strong>Problem2.7</strong></p>
+<pre><code>data(flights, package=&quot;nycflights13&quot;)
+help(flights)
+View(flights)</code></pre>
+<ol style="list-style-type: decimal">
+<li>19 variables</li>
+<li>534 cases</li>
+<li>each cass stands for a flight that departed at NYC in 2013</li>
+<li>Categorical:“carrier”,“flight”,“tailnum”,“origin”,“dest”; the rest of the vairables are quantatitive</li>
+<li>air_time (minutes), distance(miles)</li>
+</ol>
+<p><strong>Problem2.8</strong> a. 5 b. 1 c. 1, 4 d. 1,2 e, 3</p>
+<p><strong>Problem2.9</strong> 1. only . and _ can be used in object name 2. all can be used in quoted character string</p>
+<p><strong>Problem2.10</strong></p>
+<pre><code>data(CountryData, package=&quot;DataComputing&quot;)
+View(CountryData)</code></pre>
+<ol style="list-style-type: decimal">
+<li><p>76</p>
+<pre><code>data(NCHS, package=&quot;DataComputing&quot;)
+View(NCHS)</code></pre></li>
+<li><p>it is the mass of trunk fat</p>
+<pre><code>data(WorldCities, package=&quot;DataComputing&quot;)
+View(WorldCities)</code></pre>
+<p>3.23018 cases</p>
+<pre><code>data(BabyNames, package=&quot;DataComputing&quot;)
+View(BabyNames)</code></pre></li>
+<li>“Year”</li>
+<li><p>It records the Party affiliation: DEM=Democratic, LIB=Libertarian,REP=Republican,UNA=Unaffiliated</p></li>
+</ol>
+<p><strong>Problem3.1</strong> 1.a data frame: fireplace %&gt;% head(4) 2.a function:fireplace() 3.the name of a named argument: count(fireplace=100) 4.a variable: group_by(fireplace)</p>
+<p><strong>Problem3.2</strong> %&gt;% is not at the end of the line and shouldn’t be connected with any punctutation symbols</p>
+<p><strong>Problem3.3</strong> &lt;- should be an equal sign</p>
+<p><strong>Problem3.4</strong> 1)BadyNames:Data Table name 2)filter:function name 3)name:variable name 4)==:function name 5)group_by: function name 6)year: variable name 7)sex: vairable name 8)summarise: function name 9)yearlyTotal: variable name 10)sum: function name 11)count: name of a named argument 12)ggplot: function name 13)aes: function name 14)x: variable name 15)y: variable name 16)geom_point: name of a named argument 17)color: name of a named argument 18)geom_vline:name of a named argument 19)xintercept:name of a named argument</p>
+<p><strong>Problem3.5</strong></p>
+<pre><code>data(BabyNames, package=&quot;DataComputing&quot;)
+View(BabyNames)</code></pre>
+<p>1.brain weight in kilograms 2.83 cases 3.a kind of mammals 4. carnivore, omnivore or herbivore</p>
+<p><strong>Problem3.6</strong> c will calculate the mean whereas the others will calculate a sum.</p>
 </div>
 
 

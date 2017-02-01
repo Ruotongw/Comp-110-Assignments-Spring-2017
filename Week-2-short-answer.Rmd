@@ -33,4 +33,113 @@ library(DataComputing)
 3\.Categorical variables:"lat,lon", "alt", "tz"; Quantitative: "faa", "name"
 , "dst", "tzone".
 
+**Problem2.2**
+2. the file name should be wrapped with quatation marks 
 
+**Problem2.3**
+```{}
+data("CPS85",package = "mosaicData")
+View(CPS85)
+```
+cencus population survey
+
+**Problem2.4**
+What's in the () should be a name of a data Table, not a data set. Also, in this statement, it is not clear whether NHANES is a data table or the name of a data set. Besides, package is a function, not a name for a object. So it should be package= "name of the data set"
+
+**Problem2.6**
+2. the name can't contain any punctuation symbols
+3. the name can't contain any punctuation symbols
+5. the name can't contain any punctuation symbols
+9. the name can't contain any punctuation symbols, it is a functio name. 
+
+**Problem2.7**
+```{}
+data(flights, package="nycflights13")
+help(flights)
+View(flights)
+```
+1. 19 variables 
+2. 534 cases 
+3. each cass stands for a flight that departed at NYC in 2013
+4. Categorical:"carrier","flight","tailnum","origin","dest"; the rest of the vairables are quantatitive 
+5. air_time (minutes), distance(miles)
+
+**Problem2.8**
+a. 5
+b. 1
+c. 1, 4
+d. 1,2
+e, 3
+
+**Problem2.9**
+1. only . and _ can be used in object name 
+2. all can be used in quoted character string
+
+**Problem2.10**
+```{}
+data(CountryData, package="DataComputing")
+View(CountryData)
+```
+1. 76
+```{}
+data(NCHS, package="DataComputing")
+View(NCHS)
+```
+2. it is the mass of trunk fat
+```{}
+data(WorldCities, package="DataComputing")
+View(WorldCities)
+```
+3.23018 cases
+```{}
+data(BabyNames, package="DataComputing")
+View(BabyNames)
+```
+4. "Year"
+5. It records the Party affiliation: DEM=Democratic, LIB=Libertarian,REP=Republican,UNA=Unaffiliated
+
+**Problem3.1**
+1.a data frame: fireplace %>% head(4)
+2.a function:fireplace()
+3.the name of a named argument: count(fireplace=100) 
+4.a variable: group_by(fireplace)
+
+**Problem3.2** 
+%>% is not at the end of the line and shouldn't be connected with any punctutation symbols 
+
+**Problem3.3**
+<- should be an equal sign 
+
+**Problem3.4**
+1)BadyNames:Data Table name
+2)filter:function name
+3)name:variable name
+4)==:function name
+5)group_by: function name 
+6)year: variable name
+7)sex: vairable name
+8)summarise: function name 
+9)yearlyTotal: variable name 
+10)sum: function name
+11)count: name of a named argument 
+12)ggplot: function name
+13)aes: function name
+14)x: variable name
+15)y: variable name
+16)geom_point: name of a named argument 
+17)color: name of a named argument
+18)geom_vline:name of a named argument 
+19)xintercept:name of a named argument 
+
+**Problem3.5**
+```{}
+data(BabyNames, package="DataComputing")
+View(BabyNames)
+```
+1.brain weight in kilograms
+2.83 cases
+3.a kind of mammals
+4. carnivore, omnivore or herbivore
+
+**Problem3.6**
+c will calculate the mean whereas the others will calculate a sum. 
