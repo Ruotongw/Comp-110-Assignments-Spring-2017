@@ -1,6 +1,6 @@
 # Week 2 Short Answer Questions
 
-## Your name should appear here!
+#Ruotong Wang
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -10,4 +10,27 @@ library(DataComputing)
 ```
 <!-- put your content after this line -->
 
-Here is my content!
+**Problem 1.1**
+ *a) Taffy: 3
+ *b) year: 1
+ *c) sex: 1
+ *d) name: 1
+ *e) count: 2
+
+**Problem 1.2**
+ *Rule 1
+: True, each row is a case
+ *Rule 2
+: Not true, the column of variable "number of states" does not contain same kind of value for each cases. The tidy pattern is interrupted by the value "it depends", which is not a number as the value of other cases. 
+ 
+ **Problem 1.4**
+ 1\.The vairables in Table A are "Year", "Algeria", "Brazil", "Columbia"; The vairables in Table B are "Country", "Y2000", "Y2001"; The variables in Table C are "Country", "Year", "Value".
+ 2\.In Table A, each case is a year; In Table B, each case is a country; In Table C, each case is a country in a year. 
+ 
+  **Problem 1.5**
+1\.There are 7 variables
+2\.Each case is an airport
+3\.Categorical variables:"lat,lon", "alt", "tz"; Quantitative: "faa", "name"
+, "dst", "tzone".
+
+
