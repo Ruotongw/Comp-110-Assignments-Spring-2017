@@ -1,6 +1,6 @@
 # Week 3 Short Answer Questions
 
-## Your name should appear here!
+## Ruotong Wang
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -10,4 +10,76 @@ library(DataComputing)
 ```
 <!-- put your content after this line -->
 
-Here is my content!
+**Problem 5.1**
+```{r}
+library(DataComputing)
+ggplot(data=CPS85,aes(x=sex,y=wage,fill=married))+geom_bar(stat='identity',position='dodge')+facet_wrap(~race, ncol = 2)
+```
+
+**Problem 5.2**
+```{r}
+WorldMap(data = HappinessIndex, key = "country", fill = "corruption")
+```
+
+**Problem 6.5**
+In Figure 6.9, what variables define the frame in this graphic? 
+Answer: the x coordinate is the name of the polling organization; y coordinaate is the competitive state. 
+
+**Problem 6.6**
+In Figure 6.9, what is the glyph and its graphical attributes?
+Answer:d. Glyph: rectange. Graphical attribute: color adn tex. 
+
+**Problem 6.7**
+In Figure 6.9, sets the order of the categorical variable in the scale for the vertical variable?
+Answer:e. the date of the poll. 
+
+**Problem 6.8**
+```{r}
+library(DataComputing)
+Small <- 
+  NCHS %>% 
+  sample_n(size=5000)
+scatterGraphHelper(Small) 
+```
+```{r}
+ggplot(data=Small,aes(x=bmi,y=weight))+geom_point()+aes(colour=smoker) 
+```
+The bmi value is mapped to x coordinate, weight maps to y coordinate and whether it is a smoker is mapped to the color of each glyph. 
+
+**Problem 7.1**
+a)summerise b)mutate c)arrange d)filter e)select f)group_by and summarise 
+**Problem 7.4**
+a) the text follow the group_by verb should not be put in ""
+b) there should not be tmp followed summerise 
+c) there should be a chaining sytax followed at the end of the first line
+**Problem 7.5**
+a)
+BabyNames %>% 
+  arrange(sex,count)
+b)
+BabyNames %>% 
+  arrange(sex)
+c)
+BabyNames %>% 
+  select(sex=M)
+d)
+BabyNames %>% 
+  summerise(total=sum(count))
+**Problem 7.7**
+1) BabyNames does not need to appear three times
+2) <- should be replaced by %>%
+3)-> should be replaced by %>%
+4) Minneaplilis 2013 should be put in the first row, before a %>%
+**Problem 7.11**
+a. sex,count,meanAge
+b. diagnosis, count, meanAge
+c, sex, diagnosis, count, meanAge
+d. age, diagnosis, count, meanAge
+f. age, count, meanAge
+**Problem 7.12**
+1)nrow
+2)names
+3)help
+4)library
+5)group_by
+6)summarise

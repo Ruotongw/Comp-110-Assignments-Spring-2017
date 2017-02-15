@@ -143,3 +143,12 @@ View(BabyNames)
 
 **Problem3.6**
 c will calculate the mean whereas the others will calculate a sum. 
+
+**Notes**
+Basic data knowlefge, each variables and cases
+If you are working with data,you never edited thet data. 
+Unit of Analysis matters 
+%>%:pipe 
+Argument: tell the function waht to do; left of the equal sign 
+Assignment <-
+constants: character strings or numbers
