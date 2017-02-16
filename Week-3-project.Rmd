@@ -1,13 +1,74 @@
 # Week 3 Project
 
-## Your name should appear here! 
+## Ruotong Wang
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
 
 ```{r include = FALSE}
 library(DataComputing)
+library(ggplot2)
 ```
 <!-- put your content after this line -->
+```{r}
+ggplot(data = NCHS, aes(x = bmi)) + geom_density(aes(color = sex)) + facet_wrap(~ pregnant)
+```
 
-Here is my content!
+Diamonds
+1.
+```{r}
+diamonds %>% 
+  group_by(color) %>% 
+  summarise( dmean=mean(carat) ) %>% 
+  arrange(desc( dmean ))  
+  head(1)
+```
+
+2.
+```{r}
+diamonds %>% 
+  group_by(clarity) %>% 
+  summarise( dmean=mean(table)/mean(carat) ) %>% 
+  arrange(desc( dmean ))
+  head(1)
+```
+Voting 
+1.
+```{r}
+ Minneapolis2013 %>% 
+  summarise(n())
+```
+
+2.
+```{r}
+ Minneapolis2013 %>% 
+  group_by(Second) %>% 
+  summarise(tally=tally(Second))%>% 
+  arrange(desc( tally )) 
+```
+
+3.
+```{r}
+ Minneapolis2013 %>% 
+  summarise(first = sum(First=="undervote"), 
+            second = sum(Second=="undervote"), 
+            third = sum(Third=="undervote"))
+```
+
+4.
+```{r}
+ Minneapolis2013 %>% 
+  filter(First=="BETSY HODGES") %>% 
+  group_by(Second) %>% 
+  summarise(tally=tally(Second))%>% 
+  arrange(desc( tally )) 
+```
+
+5.
+```{r}
+ Minneapolis2013 %>% 
+  group_by(Precinct) %>%
+  summarise(uvote = base::mean(First == "undervote", na.rm = TRUE)) %>% 
+  arrange(desc(uvote )) %>%
+ head(1)
+```
