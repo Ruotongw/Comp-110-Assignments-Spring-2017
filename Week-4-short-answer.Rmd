@@ -1,6 +1,6 @@
 # Week 4 Short Answer Questions
 
-## Your name should appear here!
+## Ruotong Wang 
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -10,4 +10,40 @@ library(DataComputing)
 ```
 <!-- put your content after this line -->
 
-Here is my content!
+**Problem 8.1**
+1) ggplot()
+2)geom_point(),geom_histogram(),geom_segment()
+3)ylab(),xlim()
+4)facet_wrap()
+5)scale_y_kog10()
+
+**Problem 8.2**
+(1)
+```{r}
+ggplot(data=mosaicData::CPS85,aes(x=age,y=wage,shape=married))+geom_point()+facet_wrap(~sector, ncol = 3)
+```
+(2)
+```{r}
+ggplot(data=mosaicData::CPS85,aes(x=age,y=wage))+geom_point()+facet_wrap(~sex+married, ncol = 2)
+```
+
+**Problem 8.3**
+(A)
+```{r}
+ggplot(data=mosaicData::CPS85,aes(x=age,y=wage))+geom_point()
+```
+(B)
+```{r}
+ggplot(data=mosaicData::CPS85,aes(x=age,y=wage,shape=sex))+geom_point(show.legend = TRUE)
+```
+(C)
+```{r}
+ggplot(data=mosaicData::CPS85,aes(x=age,y=wage,shape=sex))+geom_point(show.legend = TRUE)+facet_wrap(~married, nrow = 2)
+```
+(D)
+```{r}
+ggplot(data=mosaicData::CPS85,aes(x=age,y=wage,shape=married))+geom_point(show.legend = TRUE)
+```
+
+**Problem 9.1**
+**Problem 9.3**
