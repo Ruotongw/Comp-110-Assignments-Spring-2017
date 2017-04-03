@@ -1,6 +1,6 @@
 # Week 1 Project  
 
-## Your name should appear here!
+## Ruotong Wang 
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -9,5 +9,11 @@ Compiled on `r date()`.
 library(DataComputing)
 ```
 <!-- put your content after this line -->
+# Olympic Game 2008
 
-Here is my content!
+![the Symbol](https://upload.wikimedia.org/wikipedia/en/thumb/8/87/2008_Summer_Olympics_logo.svg/751px-2008_Summer_Olympics_logo.svg.png)
+(https://en.wikipedia.org/wiki/2008_Summer_Olympics#/media/File:2008_Summer_Olympics_logo.svg)
+```
+ *a) The first summer Olympic Game being held in Beijing ,
+ *b) 
+```
