@@ -46,4 +46,32 @@ ggplot(data=mosaicData::CPS85,aes(x=age,y=wage,shape=married))+geom_point(show.l
 ```
 
 **Problem 9.1**
+*str() is a quick presentation 
+*group_by is a data verb 
+*rank() is a transformation 
+*mean() is a summary function 
+*filter() is a data verb
+*summary() is a quick presentaiton 
+*summarise() is a data verb 
+*anti_join() is a data verb
+*glimpse() is a quick presentation
+
 **Problem 9.3**
+
+*Task 1
+```{r}
+diamonds %>%
+  group_by(color) %>%
+  summarize(ave=mean(carat, na.rm=TRUE)) %>%
+  arrange(desc(ave)) %>%
+  head(1)
+```
+
+*Task 2
+```{r}
+diamonds %>%
+  group_by(clarity) %>%
+  summarize(ave=mean(table, na.rm=TRUE)) %>%
+  arrange(desc(ave)) %>%
+  head(1)
+```
