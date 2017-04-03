@@ -35,7 +35,6 @@ Answer:e. the date of the poll.
 
 **Problem 6.8**
 ```{r}
-library(DataComputing)
 Small <- 
   NCHS %>% 
   sample_n(size=5000)
