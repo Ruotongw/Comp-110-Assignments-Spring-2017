@@ -1,6 +1,6 @@
 # Week 5 Short Answer Questions
 
-## Your name should appear here!
+## Ruotong Wang
 
 <!-- leave this material as is -->
 Compiled on `r date()`.
@@ -10,4 +10,25 @@ library(DataComputing)
 ```
 <!-- put your content after this line -->
 
-Here is my content!
+10.1: Because different from other data verbs that take one data table as input, the date verb "join" take two data table as input and return only one data table. 
+
+10.2: Because there are 256 rows in Demegraphics and only 241 rows in CountryCentroids. So there must be some rows in demographics can not find a correspondants in CountryCentroids. 
+
+10.3: 1) the Data Table B, we can use mutate to create a new variable "change" and define is as Y2001-Y2000. And then arrange by the new variable. 
+2) Data Table C: we can join the ContinentData with DataTable C first by country and then group by continent and summaerize the sum of the value. 
+
+11.1
+*a: Version one: Person with particular name, same sex and born in one year; Version two, people who have the same name and born in one year; Version Three, people who have the same name and same sex. 
+*b: Version One is narrow, Version Two is wide 
+*c: Sex
+*e: when spread, fill= NA
+*f: nbabies
+*g: F and M in to Sex; year and nbabies; 
+
+11.3
+a. A versus C, C is narrow
+b. B veruss C, C is narrow 
+
+11.4
+Each year the value of sbp. 
+
